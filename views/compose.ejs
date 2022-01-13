@@ -1,0 +1,17 @@
+<%- include('header'); %>
+
+<h1>Compose</h1>
+<p class="hidden"> <%=composeContent%> </p>
+
+<form action="/compose" method="post">
+    <div class="form-group">
+    <h6>Title</h6>
+    <input type="text" class="form-control" name="title" id="">
+    <h6>Content</h6>
+    <textarea name="content" class="form-control" cols="30" rows="5"></textarea>
+    <button class="btn btn-primary" type="submit">Publish</button>
+    </div>
+    
+</form>
+
+<%- include('footer'); %>
